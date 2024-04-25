@@ -1,0 +1,1 @@
+poetry run python yolov7/train.py --data yolov7/Rust8-2/data.yaml --batch 4 --weights yolov7/yolov7.pt --cfg yolov7/cfg/training/yolov7.yaml --epochs 30 --name yolov7-corrosion --img 640   --hyp yolov7/data/hyp.scratch.custom.yaml
