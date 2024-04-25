@@ -10,19 +10,20 @@ from yolov7.simple_detect import detect
 def execute_command_from_file(file_path):
     try:
         with open(file_path, 'r') as file:
-            command = file.readline().strip()  # Lê a primeira linha do arquivo
-            subprocess.run(command, shell=True, check=True)  # Executa o comando
+            command = file.readline().strip()
+            subprocess.run(command, shell=True, check=True)
     except FileNotFoundError:
         print(f"File '{file_path}' not found.")
     except subprocess.CalledProcessError as e:
         print(f"Error running the command line: {e}")
 
+
 def download_progress_hook(count, block_size, total_size):
     percent = int(count * block_size * 100 / total_size)
     print(f"\rDownloading... {percent}%", end='', flush=True)
 
+
 def download_and_extract(url, target_dir):
-    # Create the target directory if it doesn't exist
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
 
@@ -31,17 +32,16 @@ def download_and_extract(url, target_dir):
     urllib.request.urlretrieve(url, zip_file_path, reporthook=download_progress_hook)
     print("\nDownload complete!")
 
-    # Extract the contents of the zip file
     extract_dir = os.path.join(target_dir, './')
     with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
         zip_ref.extractall(extract_dir)
 
-    # Remove the zip file
     os.remove(zip_file_path)
 
 
 def is_valid_folder(folder):
     return os.path.exists(folder) and os.path.isdir(folder)
+
 
 def find_file(diretorio_base, nome_arquivo):
     for root, dirs, files in os.walk(diretorio_base):
@@ -49,7 +49,8 @@ def find_file(diretorio_base, nome_arquivo):
             return os.path.join(root, nome_arquivo)
     return None
 
-runs_folder = 'yolov7/runs'
+
+runs_folder = 'runs/'
 dataset_folder = 'yolov7/Rust8-2'
 if is_valid_folder(runs_folder):
     weights = find_file(runs_folder+'/train', 'best.pt')
