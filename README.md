@@ -9,7 +9,7 @@ Another thing important to mention is that this project uses a dataset of rust c
  - Poetry >= 1.8
  - Git
 
-## How to run (It is easy!)
+## How to run: Training + Detection (It is easy!)
 
 The first time you run, it will need to download the dataset and train the model. If you do not have a NVIDIA gpu it will take some hours to train the model. Once the model is trained you will able to run the code again and it will find the weights from the previous training, and then it will run the tests with the 10 images located in `test_images` folder.
 
@@ -22,6 +22,13 @@ cd yolo-corrosion-detection
 ```
 poetry run python app.py
 ```
+
+## Detecting with Yolo
+```
+poetry run python yolov7/detect.py --weights runs/train/yolov7-corrosion2/weights/best.pt --source /tmp/rust3.mp4 --view-img
+```
+Make sure to pass the correct `best.pt` in **--weights** parameter, as well as the correct **--source** parameter path. The source can be images, videos or even urls of live video cameras.
+
 
 ## Results
 ![rust0 png_screenshot_26 04 2024](https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/3ae1b900-777e-41a2-b14f-ea1d91f621d2)
