@@ -68,5 +68,5 @@ else:
         dataset_url = "https://public-scicrop.s3.amazonaws.com/academy/Rust8-2.zip"
         print('Downloading dataset.')
         download_and_extract(dataset_url, 'yolov7/')
-        execute_command_from_file('training_cmd.txt')
+    execute_command_from_file('training_cmd.txt')
 
