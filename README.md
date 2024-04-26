@@ -49,5 +49,6 @@ https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/7af79f84-4642-
 ![rust8 png_screenshot_26 04 2024](https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/8b26fbb6-94cc-4b03-bcb3-331f7830e593)
 ![rust9 png_screenshot_26 04 2024](https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/7cd366c4-0a5e-42b7-8992-c6879f3a7ef8)
 
-
+## Next Steps
+If you want to continue learning about AI with computer vision, take a look in this repository: https://github.com/wlsdzyzl/CorrosionDetection in order to learn how to make image classification with **resnet** and then image segmentation with **unet**.
 
