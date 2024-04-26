@@ -4,6 +4,8 @@ This code is nothing more than a group of scripts that automate the training and
 
 Another thing important to mention is that this project uses a dataset of rust corrosion images from Roboflow. The dataset is automatically downloaded in the first run, and located at yolov7/Rust8-2 folder. The original dataset can be found here: https://universe.roboflow.com/trailrun/datasetnew-n7bra
 
+**This content is part of SCICROP-ACADEMY learning series.**
+
 ## Dependencies
  - Python >= 3.8
  - Poetry >= 1.8
