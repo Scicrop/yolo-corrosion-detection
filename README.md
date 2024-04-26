@@ -33,7 +33,11 @@ Make sure to pass the correct `best.pt` in **--weights** parameter, as well as t
 
 
 ## Results
-[rust-dection-example.webm](https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/8671729c-905c-4051-b053-1736cc055df3)
+
+
+https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/7af79f84-4642-4d7b-8d67-ac4b6dbc55a3
+
+
 ![rust0 png_screenshot_26 04 2024](https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/3ae1b900-777e-41a2-b14f-ea1d91f621d2)
 ![rust1 png_screenshot_26 04 2024](https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/d7054208-596a-4d9e-b36f-0bf1ae44100c)
 ![rust2 png_screenshot_26 04 2024](https://github.com/Scicrop/yolo-corrosion-detection/assets/692043/951ea20d-cf9c-4cae-860b-6a61bc75bdc2)
